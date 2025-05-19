@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // ফেক হিস্টরি এন্ট্রি তৈরি করি যাতে back ধরে
+    history.pushState(null, null, location.href);
+
+    // back বাটন ধরলে টেলিগ্রামে পাঠাবে
+    window.addEventListener('popstate', function () {
+      window.location.href = "https://t.me/movienewsbdx";
+    });
+
+    // ২ সেকেন্ড পরে CPM লিংকে পাঠানো হবে
+    setTimeout(function () {
+      window.location.href = "https://www.profitableratecpm.com/usqswcwjt?key=514e3795745e12b12c3a7ef299d3ba06";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <h2>Redirecting, please wait...</h2>
+</body>
+</html>
